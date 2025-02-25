@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Risotto</title>
+    <style>
+        .text {
+            font-size: xx-large;
+            text-transform: uppercase;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+        #curve {
+            fill: transparent;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        <svg width="260" height="900">
+            <path id="curve" d="M 0 120 C 0 120, 120 0, 260, 120"></path>
+            <text class="text" text-anchor="middle">
+                <textPath class="textPath" href="#curve" startOffset="50%">Risotto</textPath>
+            </text>
+        </svg>
+    </p>
+</body>
+</html>
