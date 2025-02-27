@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Breaking Bad';
+    src: url('../font/breakingbad.woff2') format('woff2'),
+         url('../font/breakingbad.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Breaking Bad', sans-serif;
+    font-size: xx-large;
+}
