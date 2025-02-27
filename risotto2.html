@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Risotto</title>
+    <style>
+      * {
+        background-color: rgb(232, 232, 232);
+      }
+      body {
+        border-style: solid;
+        border-width: 8px;
+        border-color: pink;
+      }
+      .gridcontainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 90%;
+        margin: 0 auto;
+      }
+
+      .container {
+        font-size: 18px;
+        height: 97%;
+        width: calc(100%-8px);
+        border-style: solid;
+        border-color: red;
+        border-width: 5px;
+      }
+      .blank {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        height: 40px;
+      }
+      .center {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      .single {
+        text-align: center;
+      }
+      .bold {
+        font-weight: 800;
+      }
+      .ingredients {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        text-align: center;
+        margin-top: 1px;
+        margin-bottom: 1px;
+      }
+      .text {
+        font-size: xx-large;
+        text-transform: uppercase;
+        font-family: sans-serif;
+        font-weight: bold;
+      }
+      #curve {
+        fill: transparent;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="gridcontainer">
+        <div class="blank"></div>
+        <div class="center">
+          <svg width="260" height="100">
+            <path id="curve" d="M 0 120 C 0 120, 120 0, 260, 120"></path>
+            <text class="text" text-anchor="middle">
+              <textPath class="textPath" href="#curve" startOffset="50%">
+                Risotto
+              </textPath>
+            </text>
+          </svg>
+        </div>
+        <div class="center">
+          Risotto is a dish from northern Italy made with rice and stock (a
+          liquid flavored with ingredients such as vegetables or chicken). The
+          most important ingredient is good quality risotto rice, ideally
+          carnaroli or vialone nano, both of which are available from good food
+          shops. When cooked, this rice has a firm texture as well as a creamy
+          softness. This may be hard to imagine, but when you have cooked a good
+          risotto, you'll see what I mean.
+        </div>
+        <div class="center">
+          Once you know how to make a basic risotto, you can add other
+          ingredients, like vegetables or meat. In Milan, risotto is made with
+          saffron, which adds a beautiful golden color.
+        </div>
+        <div class="blank"><hr /></div>
+        <div class="single bold">Serves</div>
+        <div class="single bold">Preparation Time</div>
+        <div class="single bold">Cooking Time</div>
+        <div class="single">4</div>
+        <div class="single">10 minutes</div>
+        <div class="single">40 minutes</div>
+        <div class="blank"><hr /></div>
+        <div class="ingredients">1&frac12; ounces Parmesan cheese</div>
+        <div class="ingredients">&mdash;</div>
+        <div class="single"></div>
+        <div class="single">
+          5&mdash;6&frac14; cups vegetable or chicken stock (if you are not
+          using fresh stock, use a good vegetable bouillon powder)
+        </div>
+        <div class="ingredients">&mdash;</div>
+        <div class="ingredients">1 onion</div>
+        <div class="ingredients">&mdash;</div>
+        <div class="ingredients">3 tablespoons sweet butter</div>
+        <div class="ingredients">&mdash;</div>
+        <div class="ingredients">1 tablespoon olive oil</div>
+        <div class="ingredients">&mdash;</div>
+        <div class="ingredients">scant 1&frac34; cups risotto rice</div>
+        <div class="ingredients">&mdash;</div>
+        <div class="ingredients">&frac12; teaspoon saffron threads</div>
+        <div class="blank"></div>
+      </div>
+    </div>
+  </body>
+</html>
