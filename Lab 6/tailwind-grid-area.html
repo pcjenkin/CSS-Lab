@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link href="tailwindbase.css" rel="stylesheet" />
+  </head>
+  <body class="bg-black text-3xl text-center font-serif border-10 border-black">
+    <div
+      class="grid grid-cols-[150px_auto_150px] grid-rows-[60px_180px_40px] h-screen"
+      style="
+        grid-template-areas: 'head head head' 'nav article aside' 'foot foot foot';
+      "
+    >
+      <header class="bg-blue-400" style="grid-area: head">Header</header>
+      <nav class="bg-yellow-200" style="grid-area: nav">Nav</nav>
+      <article class="bg-green-300" style="grid-area: article">
+        Article
+      </article>
+      <aside class="bg-amber-400" style="grid-area: aside">Aside</aside>
+      <footer class="bg-yellow-100" style="grid-area: foot">Footer</footer>
+    </div>
+  </body>
+</html>
